@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css2?family=Varela+Round&display=swap);
+
+* {
+    --color-1: #ffffff;
+    --color-2: #36dbff;
+    --color-3: rgba(0, 0, 0, 0.046);
+    --color-4: rgba(255, 255, 255, 0.819);
+    --color-5: rgba(255, 255, 255, 0.15);
+    --varela: 'Varela', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-color: var(--color-2);
+}
+
+/*start button*/
+
+#get-buddy {
+    padding: 1rem 2rem;
+    width: 20rem;
+    height: 10rem;
+}
+
+
+/*content*/
+
+/*image and text*/
+
+/*try again button*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
