@@ -47,9 +47,11 @@ body {
     border: solid 1px var(--color-4);
 }
 
-#get-buddy,
+/*button's animations*/
+
+/*#get-buddy,
 #new-button {
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease;
 }
 
 
@@ -57,6 +59,34 @@ body {
 #new-button:hover {
     background-color: var(--color-5);
     border: solid 1px var(--color-6);
+}*/
+
+#get-buddy:hover,
+#new-button:hover {
+    animation: color-change 1.6s forwards;
+}
+
+@keyframes color-change {
+    0% {
+        background-color: var(--color-2);
+        border: solid 1px var(--color-4);
+    }
+
+    50% {
+        background-color: var(--color-5);
+        border: solid 1px var(--color-6);
+    }
+
+    100% {
+        background-color: var(--color-2);
+        border: solid 1px var(--color-4);
+    }
+}
+
+#get-buddy:active,
+#new-button:active {
+    background-color: var(--color-5) !important;
+    border: solid 1px var(--color-6) !important;
 }
 
 /*content*/
