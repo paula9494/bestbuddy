@@ -1,38 +1,109 @@
 @import url(https://fonts.googleapis.com/css2?family=Varela+Round&display=swap);
 
 * {
-    --color-1: #ffffff;
-    --color-2: #36dbff;
-    --color-3: rgba(0, 0, 0, 0.046);
-    --color-4: rgba(255, 255, 255, 0.819);
-    --color-5: rgba(255, 255, 255, 0.15);
+    --color-1: rgba(255, 255, 255, 1);
+    --color-2: rgba(54, 219, 255, 1);
+    --color-3: rgba(0, 0, 0, 0.005);
+    --color-4: rgba(255, 255, 255, 0.800);
     --varela: 'Varela', sans-serif;
 }
+
+/*center content*/
 
 html,
 body {
     height: 100%;
-    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: var(--color-2);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-shrink: 0;
 }
 
 /*start button*/
 
 #get-buddy {
-    padding: 1rem 2rem;
-    width: 20rem;
-    height: 10rem;
+    font-size: 1.08rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5rem;
+    font-weight: 400;
+    font-family: var(--varela);
+    color: var(--color-1);
+    background-color: var(--color-3);
+    border: solid 1px var(--color-4);
 }
-
 
 /*content*/
 
-/*image and text*/
+#my-buddy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    margin: auto;
+    min-height: 350px;
+    flex-shrink: 0;
+}
 
-/*try again button*/
+#greetings {
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-family: var(--varela);
+    color: var(--color-1);
+}
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+#pet-image {
+    max-width: 60%;
+    max-height: 20rem;
+    margin-bottom: 1rem;
+}
+
+#new-button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5rem;
+    font-weight: 400;
+    font-family: var(--varela);
+    color: var(--color-1);
+    background-color: var(--color-3);
+    border: solid 1px var(--color-4);
+}
+
+/*copyrights*/
+
+#copyrights {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    letter-spacing: 0.05rem;
+    font-weight: 400;
+    font-family: var(--varela);
+    color: var(--color-1);
+}
+
+a,
+a:hover {
+    font-size: inherit;
+    letter-spacing: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    color: inherit;
+    text-decoration: inherit;
 }
