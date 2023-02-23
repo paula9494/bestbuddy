@@ -5,6 +5,8 @@
     --color-2: rgba(54, 219, 255, 1);
     --color-3: rgba(0, 0, 0, 0.005);
     --color-4: rgba(255, 255, 255, 0.800);
+    --color-5: rgba(255, 255, 255, 0.500);
+    --color-6: rgba(255, 255, 255, 0.300);
     --varela: 'Varela', sans-serif;
 }
 
@@ -45,6 +47,18 @@ body {
     border: solid 1px var(--color-4);
 }
 
+#get-buddy,
+#new-button {
+    transition: background-color 0.2s ease-in-out;
+}
+
+
+#get-buddy:hover,
+#new-button:hover {
+    background-color: var(--color-5);
+    border: solid 1px var(--color-6);
+}
+
 /*content*/
 
 #my-buddy {
@@ -61,7 +75,7 @@ body {
 #greetings {
     font-size: 1.1rem;
     letter-spacing: 0.05rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-weight: 400;
     font-family: var(--varela);
     color: var(--color-1);
